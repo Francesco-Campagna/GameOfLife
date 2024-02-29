@@ -1,0 +1,5 @@
+comando per runnare: mpiCC GameOfLife.cpp -I/usr/include -L/usr/lib/x86_64-linux-gnu -lallegro -lallegro_primitives -o GameOfLife && mpirun -np NUM_PROC --oversubscribe ./GameOfLife
+
+dove NUM_PROC = part_x * part_y + 1
+
+pacchetti da installare: sudo apt install openmpi-common openmpi-bin liballegro5-dev libopenmpi-dev
